@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito:wght@700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <title>Restoran-Bootstrap Restaurant</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark d-none d-lg-flex navbar-expand-lg p-0">
+        <div class="container-fluid px-4 px-lg-5 ">
+            <a class="navbar-brand" href="/index.html">
+                <i class="fa fa-solid fa-utensils me-3"></i>Restoran
+            </a>
+            <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-bg-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/service.html">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/booking.html">BOOKING</a></li>
+                            <li><a class="dropdown-item" href="/team.html">OUT TEAM</a></li>
+                            <li><a class="dropdown-item" href="/testimonial.html">TESTIMONIAL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+                <button class="CustomStyle ms-lg-3 mb-3 mb-lg-0">BOOK A TABLE</button>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-dark d-flex d-lg-none navbar-expand-lg p-0 sticky-top"
+        style="background-color: #0F172B; transform: translate(0px);">
+        <div class="container-fluid px-4 px-lg-5 ">
+            <a class="navbar-brand" href="/index.html">
+                <i class="fa fa-solid fa-utensils me-3"></i>Restoran
+            </a>
+            <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-bg-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/service.html">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/booking.html">BOOKING</a></li>
+                            <li><a class="dropdown-item" href="/team.html">OUT TEAM</a></li>
+                            <li><a class="dropdown-item" href="/testimonial.html">TESTIMONIAL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+                <button class="CustomStyle ms-lg-3 mb-3 mb-lg-0">BOOK A TABLE</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid py-5" id="Major">
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-light ps-3 align-items-center text-lg-start text-center mt-5 mt-lg-0">
+                    <h1 class="mt-5 mt-md-0" id="MajorTitle">Enjoy Our <br> Delicious Meal</h1>
+                    <p style="font-size: 1.03rem;">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+                        eos.
+                        Clita
+                        erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                    </p>
+                    <button class="CustomStyle px-5 py-3 mt-3">BOOK A TABLE</button>
+                </div>
+                <div class="col-lg-6 py-5">
+                    <img src="./images/hero.png" class="img-fluid Animated" alt="nor found">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg py-5 px-4" style="background-color: white;">
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6">
+                <div class="px-4 py-5 rounded-2 shadow" id="About">
+                    <i class="fa fa-solid fa-user-tie fa-3x"></i>
+                    <h1 class="fs-5 mt-4" id="aboutTitle">Master Chefs</h1>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="px-4 py-5 rounded-2 shadow" id="About">
+                    <i class="fa fa-solid fa-utensils me-3 fa-3x"></i>
+                    <h1 class="fs-5 mt-4" id="aboutTitle">Quality Food</h1>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="px-4 py-5 rounded-2 shadow" id="About">
+                    <i class="fa fa-sharp fa-solid fa-cart-plus fa-3x"></i>
+                    <h1 class="fs-5 mt-4" id="aboutTitle">Online Order</h1>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="px-4 py-5 rounded-2 shadow" id="About">
+                    <i class="fa fa-sharp fa-solid fa-headset fa-3x"></i>
+                    <h1 class="fs-5 mt-4" id="aboutTitle">24/7 Service</h1>
+                    <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 px-4" style="background-color: white;">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="">
+                            <img src="./images/1.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="">
+                            <img src="./images/2.jpg" class="img-fluid w-75" style="height:auto;margin-top: 25%;">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="">
+                            <img src="./images/3.jpg" class="img-fluid w-75" style="height:auto; margin-left: 25%;">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="">
+                            <img src="./images/4.jpg" class="img-fluid" style="height:auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-2 mt-lg-5" id="serviseDesc">
+                    <h1 class="fs-4 Title">About Us </h1>
+                    <h2 class="ServiseTitlee">
+                        Welcome to <i class="fa fa-solid fa-utensils"></i>
+                        Restoran
+                    </h2>
+                    <p class="fs-6 my-3 text-secondary">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat
+                        ipsum et lorem et sit, sed stet lorem sit.
+                        <br><br>
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
+                        erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                    </p>
+                    <div class="row mt-4 mx-1 mb-1">
+                        <div class="col-sm-6 mb-sm-0 mb-3 clearfix" style="border-left: 5px solid #FEA116;">
+                            <h1 class="float-start" style="font-size: 3rem; font-family: nunito;">15</h1>
+                            <p class="float-start text-secondary ms-4 mb-0 position-relative">
+                                Years of <br> <span style="color: #0F172B; font-weight: bolder;">EXPERIENCE</span>
+                            </p>
+                        </div>
+                        <div class="col-sm-6 clearfix" style="border-left: 5px solid #FEA116;">
+                            <h1 class="float-start" style="font-size: 3rem; font-family: nunito;">50</h1>
+                            <p class="float-start text-secondary ms-4 mb-0 position-relative">
+                                Popular <br> <span style="color: #0F172B; font-weight: bolder;">MASTER CHEFS</span>
+                            </p>
+                        </div>
+                    </div>
+                    <button class="CustomStyle mt-4 ms-1 px-5 py-3">READ MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 px-4" style="background-color: white;">
+        <div class="row">
+            <h1 class="text-center" id="MenuTitle">Food Menu</h1>
+            <h2 class="text-center" id="FoodItemTitle">
+                Most Popular Items
+            </h2>
+        </div>
+
+        <div class=" d-flex justify-content-center mt-5">
+            <ul class="nav nav-tabs nav-fill " style="width: 28%;">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#breakfast" data-bs-toggle="tab">
+                        <i class="position-relative fa fa-solid fa-mug-saucer fa-2x me-2" style="color: #FEA116;"></i>
+                        <div class="d-inline-block text-start">
+                            <h6 class="text-secondary mb-0" style="font-size: 0.9rem;">Popular</h6>
+                            <h5 class='mt-0' style="color: #0F172B;font-size: 1.1rem;">Breakfast</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lunch" data-bs-toggle="tab">
+                        <i class="position-relative fa fa-solid fa-burger fa-2x me-2" style="color: #FEA116;"></i>
+                        <div class="d-inline-block text-start">
+                            <h6 class="text-secondary mb-0" style="font-size: 0.9rem;">Special</h6>
+                            <h5 class='mt-0' style="color: #0F172B; font-size: 1.1rem;">Lunch</h5>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dinner" data-bs-toggle="tab">
+                        <i class="position-relative fa fa-solid fa-utensils fa-2x me-2" style="color: #FEA116;"></i>
+                        <div class="d-inline-block text-start">
+                            <h6 class="text-secondary mb-0" style="font-size: 0.9rem;">Lovely</h6>
+                            <h5 class='mt-0' style="color: #0F172B;font-size: 1.1rem;">Dinner</h5>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content my-5">
+            <div class="tab-pane active fade show" id="breakfast">
+                <div class="row g-3">
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="lunch">
+                <div class="row g-3">
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="dinner">
+                <div class="row g-3">
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="d-flex w-100">
+                            <img src="./images/menu-1.jpg" style="width: 80px; height: 80px;" alt="not found">
+                            <div class="w-100 ms-4">
+                                <div class="clearfix border-bottom pb-1 mb-1">
+                                    <h1 class="float-start fs-5 mb-0" style="color: #0F172B; font-weight: bold;">Chicken
+                                        Burger</h1>
+                                    <h1 class="float-end fs-4 mb-0" style="color: #FEA116; font-weight: bold;">$115</h1>
+                                </div>
+                                <p class="mb-0 fst-italic">Ipsum ipsum clita erat amet dolor justo diam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pb-5 px-0" style="background-color: white;">
+        <div class="row g-0">
+            <div class="col-md-6 position-relative Banner">
+                <a href="https://www.youtube.com/" target="blank" class="text-reset">
+                    <div class="position-absolute AnimatedDiv d-flex justify-content-center align-items-center">
+                        <i class="fa fa-sharp fa-play fa-3x"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 p-5" style="background-color: #0F172B;">
+                <h1 id="ReservationTitle">Reservation</h1>
+                <h2 id='TableTitle' style="font-weight: bold; color: white;">Book A Table Online</h2>
+                <form class="mt-4">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Enter name">
+                                <label for="#name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                                <label for="#email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="datetime-local" class="form-control" id="dateTime"
+                                    placeholder="Date and Time">
+                                <label for="#dateTime">Date and Time</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="select">
+                                    <option value="">People 1</option>
+                                    <option value="">People 2</option>
+                                    <option value="">People 3</option>
+                                </select>
+                                <label for="#select">No Of People</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class='form-control' id="textarea" style="height: 100px;"
+                                    placeholder="special req"></textarea>
+                                <label for="#textarea">Special Request</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="CustomStyle p-3 w-100">BOOK NOW</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 px-lg-4 px-5" style="background-color: white;">
+        <div class="row">
+            <h1 class="text-center" id="MenuTitle">Team Members</h1>
+            <h2 class="text-center" id="ChefsTitle">
+                Our Master Chefs
+            </h2>
+        </div>
+        <div class="row pt-5 g-4">
+            <div class="col-lg-3 col-sm-6 ChefColumn">
+                <div class="p-4 rounded-2 shadow" id="chefs">
+                    <div id="ChefsImage" class="rounded-circle overflow-hidden text-center">
+                        <img src="./images/team-1.jpg" class='img-fluid' alt="not found">
+                    </div>
+                    <h1 class="fs-5 mt-4 mb-0 text-center" style="font-weight: bold;">Full Name</h1>
+                    <p class="text-center" style="font-size: 0.85rem;">Designation</p>
+                    <div class="text-center social mt-4">
+                        <a href="#"><i class="fa fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 ChefColumn">
+                <div class="p-4 rounded-2 shadow" id="chefs">
+                    <div id="ChefsImage" class="rounded-circle overflow-hidden text-center">
+                        <img src="./images/team-2.jpg" class='img-fluid' alt="not found">
+                    </div>
+                    <h1 class="fs-5 mt-4 mb-0 text-center" style="font-weight: bold;">Full Name</h1>
+                    <p class="text-center" style="font-size: 0.85rem;">Designation</p>
+                    <div class="text-center social mt-4">
+                        <a href="#"><i class="fa fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 ChefColumn">
+                <div class="p-4 rounded-2 shadow" id="chefs">
+                    <div id="ChefsImage" class="rounded-circle overflow-hidden text-center">
+                        <img src="./images/team-3.jpg" class='img-fluid' alt="not found">
+                    </div>
+                    <h1 class="fs-5 mt-4 mb-0 text-center" style="font-weight: bold;">Full Name</h1>
+                    <p class="text-center" style="font-size: 0.85rem;">Designation</p>
+                    <div class="text-center social mt-4">
+                        <a href="#"><i class="fa fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 ChefColumn">
+                <div class="p-4 rounded-2 shadow" id="chefs">
+                    <div id="ChefsImage" class="rounded-circle overflow-hidden text-center">
+                        <img src="./images/team-4.jpg" class='img-fluid' alt="not found">
+                    </div>
+                    <h1 class="fs-5 mt-4 mb-0 text-center" style="font-weight: bold;">Full Name</h1>
+                    <p class="text-center" style="font-size: 0.85rem;">Designation</p>
+                    <div class="text-center social mt-4">
+                        <a href="#"><i class="fa fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 px-4 mb-5" style="background-color: white;">
+
+        <div class="row">
+            <h1 class="text-center" id="MenuTitle">Testimonial</h1>
+            <h2 class="text-center" id='TestimonialTitle'>
+                Our Client Says!!!
+            </h2>
+        </div>
+
+        <div class="row my-5 g-3">
+            <div class="col-lg-3 col-md-6">
+                <div class="item p-4 rounded-1 shadow">
+                    <i class="fa fa-solid fa-quote-left fa-2x"></i>
+                    <p class="">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor sit amet eirmod
+                        eos
+                        labore diam
+                    </p>
+                    <div class="d-flex">
+                        <div class="">
+                            <img src="./images/testimonial-1.jpg" class='rounded-circle' alt="not found">
+                        </div>
+                        <div class="ms-3 mt-1">
+                            <h1 class="fs-5 m-0 " style="font-weight: bold;">Client Name</h1>
+                            <p class="mb-0 mt-1" style="font-size: 0.85rem;">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="item p-4 rounded-1 shadow">
+                    <i class="fa fa-solid fa-quote-left fa-2x"></i>
+                    <p class="">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor sit amet eirmod
+                        eos
+                        labore diam
+                    </p>
+                    <div class="d-flex">
+                        <div class="">
+                            <img src="./images/testimonial-2.jpg" class='rounded-circle' alt="not found">
+                        </div>
+                        <div class="ms-3 mt-1">
+                            <h1 class="fs-5 m-0 " style="font-weight: bold;">Client Name</h1>
+                            <p class="mb-0 mt-1" style="font-size: 0.85rem;">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="item p-4 rounded-1 shadow">
+                    <i class="fa fa-solid fa-quote-left fa-2x"></i>
+                    <p class="">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor sit amet eirmod
+                        eos
+                        labore diam
+                    </p>
+                    <div class="d-flex">
+                        <div class="">
+                            <img src="./images/testimonial-3.jpg" class='rounded-circle' alt="not found">
+                        </div>
+                        <div class="ms-3 mt-1">
+                            <h1 class="fs-5 m-0 " style="font-weight: bold;">Client Name</h1>
+                            <p class="mb-0 mt-1" style="font-size: 0.85rem;">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="item p-4 rounded-1 shadow">
+                    <i class="fa fa-solid fa-quote-left fa-2x"></i>
+                    <p class="">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor sit amet eirmod
+                        eos
+                        labore diam
+                    </p>
+                    <div class="d-flex">
+                        <div class="">
+                            <img src="./images/testimonial-4.jpg" class='rounded-circle' alt="not found">
+                        </div>
+                        <div class="ms-3 mt-1">
+                            <h1 class="fs-5 m-0 " style="font-weight: bold;">Client Name</h1>
+                            <p class="mb-0 mt-1" style="font-size: 0.85rem;">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid pt-5 pb-4 px-4" style="background-color: #0F172B;">
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 col-lg-3">
+                <h1 class="" id="FooterTitles">Company</h1>
+
+                <ul class="">
+                    <li class="">
+                        <a href=" #" class="text-reset text-decoration-none" id="Hoverable">
+                            <i class="fa fa-solid fa-chevron-right me-2 fa-2xs"></i>About Us
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href=" #" class="text-reset text-decoration-none" id="Hoverable">
+                            <i class="fa fa-solid fa-chevron-right me-2 fa-2xs"></i>Contact Us
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href=" #" class="text-reset text-decoration-none" id="Hoverable">
+                            <i class="fa fa-solid fa-chevron-right me-2 fa-2xs"></i>Reservation
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href=" #" class="text-reset text-decoration-none" id="Hoverable">
+                            <i class="fa fa-solid fa-chevron-right me-2 fa-2xs"></i>Privacy Policy
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href=" #" class="text-reset text-decoration-none" id="Hoverable">
+                            <i class="fa fa-solid fa-chevron-right me-2 fa-2xs"></i>Terms & Conditions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <h1 class="" id="FooterTitles">Contact</h1>
+
+                <ul class="">
+                    <li class="">
+                        <i class="fa fa-solid fa-location-dot me-3"></i>123 Street, New York, USA
+                    </li>
+                    <li class="">
+                        <i class="fa fa-solid fa-phone me-3"></i>+012 345 67890
+                    </li>
+                    <li class="">
+                        <i class="fa fa-solid fa-envelope me-3"></i>info@example.com
+                    </li>
+                    <li class="mt-4 ms-0">
+                        <div>
+                            <a href="#" class='btn btn-outline-light rounded-circle' id="social">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class='btn btn-outline-light rounded-circle' id="social">
+                                <i class="fa fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class='btn btn-outline-light rounded-circle' id="social">
+                                <i class="fa fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" class='btn btn-outline-light rounded-circle' id="social">
+                                <i class="fa fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <h1 class="" id="FooterTitles">Opening</h1>
+
+                <ul class="">
+                    <li class="">
+                        <span class="fs-5 fw-bold">Monday - Saturday</span>
+                        <br>
+                        09AM - 09PM
+                    </li>
+                    <li class="">
+                        <span class="fs-5 fw-bold">Sunday</span>
+                        <br>
+                        10AM - 08PM
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <h1 class="" id="FooterTitles">Newsletters</h1>
+                <ul class="">
+                    <li class="">
+                        Dolor amet sit justo amet elitr clita ipsum elitr est.
+                    </li>
+                    <li id="inputLi">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn">SIGNUP</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="bg-light">
+
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="text-light fs-6">
+                    <i class="fa fa-thin fa-copyright"></i>
+                    <span class="text-decoration-underline">Your Site Name,</span>
+                    All Right Reserved. Designed By
+                    <span class="text-decoration-underline"> HTML Codex</span>
+                </p>
+                <p class="text-light fs-6 mb-0">
+                    Distributed By
+                    <span class="text-decoration-underline">ThemeWagon</span>
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="nav nav-horizontal justify-content-md-end justify-content-center p-0">
+                    <li class="nav-item mt-0">
+                        <a href="#" class="nav-link text-reset text-decoration-none">Home</a>
+                    </li>
+                    <li class="nav-item mt-0">
+                        <a href="#" class="nav-link text-reset text-decoration-none">Cookies</a>
+                    </li>
+                    <li class="nav-item mt-0">
+                        <a href="#" class="nav-link text-reset text-decoration-none">Help</a>
+                    </li>
+                    <li class="nav-item mt-0">
+                        <a href="#" class="nav-link text-reset text-decoration-none">FQAs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="position-fixed ScrollUp">
+        <a href="#" class="w-100 h-100">
+            <i class="fa fa-sharp fa-light fa-arrow-up" style="color: white;"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

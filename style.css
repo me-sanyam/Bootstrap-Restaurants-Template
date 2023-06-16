@@ -1,0 +1,474 @@
+:root {
+    --base: #FEA116;
+    --dark: #0F172B;
+    --white: #fff;
+    --black: #000;
+    --heebo: 'Heebo', sans-serif;
+    --pacifico: 'Pacifico', cursive;
+    --nunito: 'Nunito', sans-serif;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus,
+.form-select:focus {
+    border: 2px solid var(--base);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #fea11681;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-style: var(--heebo);
+}
+
+.navbar {
+    z-index: 1;
+    transition: 0.3s;
+    transform: translateY(10px);
+}
+
+.navbar .active {
+    color: var(--base);
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-family: var(--nunito);
+    color: var(--base) !important;
+    font-weight: bolder;
+}
+
+.navbar .nav-item {
+    margin: 0px 5px;
+}
+
+.navbar .nav-link {
+    color: var(--white) !important;
+    transition: 0.6s;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:active,
+.navbar .nav-link:focus {
+    color: var(--base) !important;
+}
+
+.PropertyChange {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--dark);
+    width: 100vw;
+    transform: translateY(0px);
+}
+
+.CustomStyle {
+    background-color: var(--base);
+    color: var(--white);
+    border-radius: 2px;
+    padding: 9px 30px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#Major {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('./images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -70px;
+}
+
+#Wrapper {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('./images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -70px;
+    height: 54vh;
+}
+
+#Wrapper #MajorTitle {
+    font-weight: 900;
+}
+
+.breadcrumb .breadcrumb-item {
+    color: var(--white);
+    font-size: 1.05rem;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: var(--base);
+    text-decoration: none;
+}
+
+#MajorTitle {
+    font-size: 4rem;
+    font-family: var(--nunito);
+}
+
+#aboutTitle,
+#FoodItemTitle,
+#TableTitle,
+#ChefsTitle,
+#TestimonialTitle {
+    font-family: var(--nunito);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0F172B;
+}
+
+.Animated {
+    animation: imgrotate 50s linear infinite;
+}
+
+@keyframes imgrotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+#About {
+    background-color: var(--white);
+    transition: 0.3s;
+}
+
+#About i {
+    color: var(--base);
+}
+
+#About h1 {
+    color: var(--dark);
+}
+
+#About p {
+    color: gray;
+}
+
+#About:hover {
+    background-color: var(--base);
+}
+
+#About:hover>h1,
+#About:hover>i,
+#About:hover>p {
+    color: var(--white);
+}
+
+#serviseDesc {
+    position: relative;
+}
+
+#serviseDesc h1 {
+    font-family: var(--pacifico);
+    color: var(--base);
+    display: inline-block;
+}
+
+.Title::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background: var(--base);
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 15px;
+}
+
+#serviseDesc h2 {
+    color: var(--dark);
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: var(--nunito);
+}
+
+#serviseDesc h2 i {
+    color: var(--base);
+}
+
+#MenuTitle {
+    font-family: var(--pacifico);
+    color: var(--base);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+#MenuTitle::after,
+#MenuTitle::before {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background: var(--base);
+    position: absolute;
+    margin-top: 10px;
+}
+
+#MenuTitle::before {
+    margin-left: -55px;
+}
+
+#MenuTitle::after {
+    margin-left: 10px;
+}
+
+.nav-tabs .nav-item :hover,
+.nav-tabs .nav-item :focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.nav-tabs .nav-item .active {
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid var(--base);
+}
+
+.ScrollUp {
+    bottom: 45px;
+    right: 45px;
+    background-color: var(--base);
+}
+
+.ScrollUp i {
+    padding: 18px;
+}
+
+.Banner {
+    background: url('./images/dinner-for-two.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.AnimatedDiv {
+    background-color: var(--base);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 45%;
+    cursor: pointer;
+    left: 42%;
+    animation: bordered 2s ease-out infinite;
+}
+
+@keyframes bordered {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 #fea11600;
+    }
+
+    50% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px #fea11678;
+    }
+
+    75% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px #fea1161a;
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 #fea11600;
+    }
+}
+
+#ReservationTitle {
+    font-family: var(--pacifico);
+    color: var(--base);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+#ReservationTitle::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background: var(--base);
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#chefs {
+    background-color: var(--white);
+    transition: 0.5s;
+    height: calc(100% - 60px);
+    overflow: hidden;
+}
+
+#chefs:hover {
+    height: calc(100% - 15px);
+}
+
+#ChefsImage {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#chefs img {
+    transition: 0.5s;
+}
+
+#chefs:hover img {
+    transform: scale(110%);
+}
+
+.social a {
+    background-color: var(--base);
+    padding: 10px;
+    padding-bottom: 20px;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.item {
+    transition: 0.5s;
+    background-color: var(--white);
+    border: 1px solid rgba(128, 128, 128, 0.204);
+}
+
+.item i {
+    color: var(--base);
+}
+
+.item p {
+    color: gray;
+}
+
+.item img {
+    width: 60px;
+    height: auto;
+}
+
+.item:hover {
+    background-color: var(--base);
+    border: 1px solid var(--base);
+}
+
+
+.item:hover p,
+.item:hover i,
+.item:hover h1 {
+    color: var(--white);
+}
+
+#FooterTitles {
+    font-family: var(--pacifico);
+    color: var(--base);
+    font-size: 1.6rem;
+    position: relative;
+}
+
+#FooterTitles::after {
+    content: "";
+    width: 45px;
+    height: 2px;
+    background: var(--base);
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+footer ul {
+    list-style: none;
+    background-color: transparent;
+    color: white;
+    padding: 20px 0px;
+}
+
+footer ul li {
+    margin-top: 8px;
+}
+
+footer ul li #social {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li #social:hover {
+    color: var(--base);
+}
+
+#inputLi {
+    position: relative;
+    margin-top: 20px;
+}
+
+#inputLi input {
+    height: 60px;
+    width: 100%;
+    padding: 0px 20px;
+    border: 1px solid var(--base);
+}
+
+#inputLi button {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-color: var(--base);
+    color: var(--white);
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+footer .nav-link {
+    padding: 5px 20px;
+}
+
+@media only screen and (max-width:768px) {
+    .navbar-brand {
+        font-size: 1.7rem;
+    }
+
+    #MajorTitle {
+        font-size: 2.3rem;
+    }
+
+
+    #serviseDesc h2 {
+        color: var(--dark);
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: var(--nunito);
+    }
+
+
+    #MajorTitle,
+    #aboutTitle,
+    #FoodItemTitle,
+    #TableTitle,
+    #ChefsTitle,
+    #TestimonialTitle {
+        font-size: 1.5rem;
+    }
+}

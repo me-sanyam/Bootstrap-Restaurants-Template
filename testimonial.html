@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito:wght@700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <title>Restoran-Bootstrap Restaurant</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark d-none d-lg-flex navbar-expand-lg p-0">
+        <div class="container-fluid px-4 px-lg-5 ">
+            <a class="navbar-brand" href="/index.html">
+                <i class="fa fa-solid fa-utensils me-3"></i>Restoran
+            </a>
+            <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-bg-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/service.html">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/booking.html">BOOKING</a></li>
+                            <li><a class="dropdown-item" href="/team.html">OUT TEAM</a></li>
+                            <li><a class="dropdown-item" href="/testimonial.html">TESTIMONIAL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+                <button class="CustomStyle ms-lg-3 mb-3 mb-lg-0">BOOK A TABLE</button>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-dark d-flex d-lg-none navbar-expand-lg p-0 sticky-top"
+        style="background-color: #0F172B; transform: translate(0px);">
+        <div class="container-fluid px-4 px-lg-5 ">
+            <a class="navbar-brand" href="/index.html">
+                <i class="fa fa-solid fa-utensils me-3"></i>Restoran
+            </a>
+            <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-bg-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/service.html">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/booking.html">BOOKING</a></li>
+                            <li><a class="dropdown-item" href="/team.html">OUT TEAM</a></li>
+                            <li><a class="dropdown-item" href="/testimonial.html">TESTIMONIAL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+                <button class="CustomStyle ms-lg-3 mb-3 mb-lg-0">BOOK A TABLE</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-5" id="Wrapper">
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-12 text-light text-center">
+                    <h1 class='mt-5' id="MajorTitle">Testimonial</h1>
+                    <nav class="">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="#">HOME</a></li>
+                            <li class="breadcrumb-item"><a href="#">PAGES</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Testimonial</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid py-5 px-4 mb-5" style="background-color: white;">
+        <div class="row">
+            <h1 class="text-center" id="MenuTitle">Testimonial</h1>
+            <h2 class="text-center" id='TestimonialTitle'>
+                Our Client Says!!!
+            </h2>
+        </div>
+        <div class="row my-5 g-3">
+            <div class="col-lg-3 col-md-6">
+                <div class="item p-4 rounded-1 shadow">
+                    <i class="fa fa-solid fa-quote-left fa-2x"></i>
+                    <p class="">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor sit amet eirmod
+                        eos
+                        labore diam
+                    </p>
+                    <div class="d-flex">
+                        <div class="">
+                            <img src="./images/testimonial-1.jpg" class='rounded-circle' alt="not found">
+                        </div>
+                        <div class="ms-3 mt-1">
+                            <h1 class="fs-5 m-0 " style="font-weight: bold;">Client Name</h1>
+                            <p class="mb-0 mt-1" style="font-size: 0.85rem;">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="item p-4 rounded-1 shadow">
+                    <i class="fa fa-solid fa-quote-left fa-2x"></i>
+                    <p class="">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor sit amet eirmod
+                        eos
+                        labore diam
+                    </p>
+                    <div class="d-flex">
+                        <div class="">
+                            <img src="./images/testimonial-2.jpg" class='rounded-circle' alt="not found">
+                        </div>
+                        <div class="ms-3 mt-1">
+                            <h1 class="fs-5 m-0 " style="font-weight: bold;">Client Name</h1>
+                            <p class="mb-0 mt-1" style="font-size: 0.85rem;">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="item p-4 rounded-1 shadow">
+                    <i class="fa fa-solid fa-quote-left fa-2x"></i>
+                    <p class="">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor sit amet eirmod
+                        eos
+                        labore diam
+                    </p>
+                    <div class="d-flex">
+                        <div class="">
+                            <img src="./images/testimonial-3.jpg" class='rounded-circle' alt="not found">
+                        </div>
+                        <div class="ms-3 mt-1">
+                            <h1 class="fs-5 m-0 " style="font-weight: bold;">Client Name</h1>
+                            <p class="mb-0 mt-1" style="font-size: 0.85rem;">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="item p-4 rounded-1 shadow">
+                    <i class="fa fa-solid fa-quote-left fa-2x"></i>
+                    <p class="">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor sit amet eirmod
+                        eos
+                        labore diam
+                    </p>
+                    <div class="d-flex">
+                        <div class="">
+                            <img src="./images/testimonial-4.jpg" class='rounded-circle' alt="not found">
+                        </div>
+                        <div class="ms-3 mt-1">
+                            <h1 class="fs-5 m-0 " style="font-weight: bold;">Client Name</h1>
+                            <p class="mb-0 mt-1" style="font-size: 0.85rem;">Designation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid pt-5 pb-4 px-4" style="background-color: #0F172B;">
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 col-lg-3">
+                <h1 class="" id="FooterTitles">Company</h1>
+
+                <ul class="">
+                    <li class="">
+                        <a href=" #" class="text-reset text-decoration-none" id="Hoverable">
+                            <i class="fa fa-solid fa-chevron-right me-2 fa-2xs"></i>About Us
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href=" #" class="text-reset text-decoration-none" id="Hoverable">
+                            <i class="fa fa-solid fa-chevron-right me-2 fa-2xs"></i>Contact Us
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href=" #" class="text-reset text-decoration-none" id="Hoverable">
+                            <i class="fa fa-solid fa-chevron-right me-2 fa-2xs"></i>Reservation
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href=" #" class="text-reset text-decoration-none" id="Hoverable">
+                            <i class="fa fa-solid fa-chevron-right me-2 fa-2xs"></i>Privacy Policy
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href=" #" class="text-reset text-decoration-none" id="Hoverable">
+                            <i class="fa fa-solid fa-chevron-right me-2 fa-2xs"></i>Terms & Conditions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <h1 class="" id="FooterTitles">Contact</h1>
+
+                <ul class="">
+                    <li class="">
+                        <i class="fa fa-solid fa-location-dot me-3"></i>123 Street, New York, USA
+                    </li>
+                    <li class="">
+                        <i class="fa fa-solid fa-phone me-3"></i>+012 345 67890
+                    </li>
+                    <li class="">
+                        <i class="fa fa-solid fa-envelope me-3"></i>info@example.com
+                    </li>
+                    <li class="mt-4 ms-0">
+                        <div>
+                            <a href="#" class='btn btn-outline-light rounded-circle' id="social">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class='btn btn-outline-light rounded-circle' id="social">
+                                <i class="fa fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class='btn btn-outline-light rounded-circle' id="social">
+                                <i class="fa fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" class='btn btn-outline-light rounded-circle' id="social">
+                                <i class="fa fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <h1 class="" id="FooterTitles">Opening</h1>
+
+                <ul class="">
+                    <li class="">
+                        <span class="fs-5 fw-bold">Monday - Saturday</span>
+                        <br>
+                        09AM - 09PM
+                    </li>
+                    <li class="">
+                        <span class="fs-5 fw-bold">Sunday</span>
+                        <br>
+                        10AM - 08PM
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <h1 class="" id="FooterTitles">Newsletters</h1>
+                <ul class="">
+                    <li class="">
+                        Dolor amet sit justo amet elitr clita ipsum elitr est.
+                    </li>
+                    <li id="inputLi">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn">SIGNUP</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="bg-light">
+
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="text-light fs-6">
+                    <i class="fa fa-thin fa-copyright"></i>
+                    <span class="text-decoration-underline">Your Site Name,</span>
+                    All Right Reserved. Designed By
+                    <span class="text-decoration-underline"> HTML Codex</span>
+                </p>
+                <p class="text-light fs-6 mb-0">
+                    Distributed By
+                    <span class="text-decoration-underline">ThemeWagon</span>
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="nav nav-horizontal justify-content-md-end justify-content-center p-0">
+                    <li class="nav-item mt-0">
+                        <a href="#" class="nav-link text-reset text-decoration-none">Home</a>
+                    </li>
+                    <li class="nav-item mt-0">
+                        <a href="#" class="nav-link text-reset text-decoration-none">Cookies</a>
+                    </li>
+                    <li class="nav-item mt-0">
+                        <a href="#" class="nav-link text-reset text-decoration-none">Help</a>
+                    </li>
+                    <li class="nav-item mt-0">
+                        <a href="#" class="nav-link text-reset text-decoration-none">FQAs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="position-fixed ScrollUp">
+        <a href="#" class="w-100 h-100">
+            <i class="fa fa-sharp fa-light fa-arrow-up" style="color: white;"></i>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
